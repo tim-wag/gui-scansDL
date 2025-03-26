@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport">
+    <title>scansDL</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/theme.css">
+    <link rel="stylesheet" href="css/global.css">
+</head>
+<body>
+    <main>
+        <div id="main-container">
+            <section>
+                <div id="side-bar">
+                    <div id="search-div">
+                        <label for="sinput">Search:</label>
+                        <input class="text-input" id="search-input" type="text" name="sinput" placeholder="one piece">
+                    </div>
+                    <div>
+                        <ul id="sites-list">
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div id="site-info-wrapper" hidden>
+                    <div id="site-header">
+                        <h2 class="pointer"></h2>
+                        <h4 class="pointer" href=""></h4>
+                    </div>
+                    <div id="manga-header-wrapper">
+                        <div id="manga-header">
+                            <h1></h1>
+                            <h3>Downloadable :</h3>
+                            <select id="download-list" multiple>
+                            </select>
+                        </div>
+                        <img src="" alt="Manga Cover" id="manga-cover">
+                    </div>
+                    <div id="download-control-div">
+                        <p><span id="selected-counter">0</span> selected</p>
+                        <button id="download-button">DOWNLOAD</button>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div id="console-wrapper">
+                </div>
+            </section>
+        </div>    
+
+        <section id="settings-section" hidden>
+            <div id="settings-div">
+                <h2>Settings</h2> <button id="cancel-settings">&cross;</button>
+                <div id="forms-container">
+                    <form>
+                        <label>Output Location :</label>
+                        <input type="text" value="./outputs" id="output-location">
+                    </form>
+                    <br><p>Combine images two-by-two ?</p>
+                    <form id="img-combine">
+                        <input type="radio" name="img-combine" value="true" checked>
+                        <label for="img-combine">Yes</label><br>
+                        <input type="radio" name="img-combine" value="false">
+                        <label for="not-combine">No</label>
+                        <div id="soloindexes-div">
+                            <label>Solo indexes</label>
+                            <input type="text" id="solo-indexes" pattern="([0-9]|,)+" value="0">
+                        </div>
+                        <div id="ignoreindexes-div">
+                            <label>Ignore indexes</label>
+                            <input type="text" id="ignore-indexes" pattern="([0-9]|,)+" value="">
+                        </div>
+                    </form>
+                    <br><p>Combine images into a PDF ?</p>
+                    <form id="make-pdf">
+                        <input type="radio" name="make-pdf" value="true" checked>
+                        <label>Yes</label><br>
+                        <input type="radio" name="make-pdf" value="false">
+                        <label>No</label><br>
+                    </form>
+                    <br><p>Delete images after download?</p>
+                    <form id="delete-imgs">
+                        <input type="radio" name="delete-imgs" value="true" checked>
+                        <label>Yes</label><br>
+                        <input type="radio" name="delete-imgs" value="false">
+                        <label>No</label><br>
+                    </form>
+                </div>
+                <button id="ok-settings-btn">OK</button>
+            </div>
+        </section>
+    </main>
+    <script src="renderer.js" charset="UTF-8"></script>
+</body>
+</html>

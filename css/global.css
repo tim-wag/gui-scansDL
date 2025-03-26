@@ -1,0 +1,30 @@
+h1, h2, h3, h4, h5, h6, ul, p {
+    margin: 0;
+    padding: 0
+}
+
+h1 {
+    font-size: 32px;
+}
+
+html {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.text-input {
+    border-radius: 5px;
+    border: 1px solid gray;
+    font-family: monospace;
+}
+
+p, ul, label {
+    font-size: 15px;
+}
+
+ul {
+    list-style: none
+}
+
+.pointer {
+    cursor: pointer;
+}

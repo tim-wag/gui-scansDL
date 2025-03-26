@@ -1,0 +1,175 @@
+#main-container {
+    display: flex;
+    gap: 8px;
+    justify-content: space-between;
+    align-items: start;
+}
+
+/* Side Bar Section */
+
+#side-bar {
+    width: 15vw;
+    height: 90vh;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    background-color: rgb(207, 207, 207);
+}
+
+#search-div {
+    display: flex;
+    flex-direction: column;
+    gap: 4px
+}
+
+#sites-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    & li:hover {
+        font-weight: 700;
+    }
+}
+
+/* Site description section */
+
+#site-info-wrapper {
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding: 8px;
+    height: 90vh;
+    flex-grow: 100;
+    width: 50vw;
+}
+
+#site-header {
+    display: flex;
+    justify-content: space-between;
+    gap: 10%;
+    margin-bottom: 16px;
+    align-items: center;
+
+    & h4 {
+        word-break: break-all;
+    }
+}
+
+#manga-header-wrapper{
+    display: flex;
+    height: 80%;
+    justify-content: space-between;
+    align-items: center;
+
+    & h1 {
+        margin-bottom: 16px;
+    }
+
+    & img {
+        display: block;
+        max-height: 60vh;
+        width: auto;
+        height: auto;
+    }
+}
+
+#manga-header {
+    height: 100%;
+}
+
+#download-list {
+    height: 80%;
+    width: fit-content;
+    min-height: 50%;
+    min-width: 20vw;
+}
+
+#download-menu {
+    display: flex;
+    gap: 32px;
+}
+
+#download-control-div {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+/* Console Section */
+
+#console-wrapper {
+    background-color: black;
+    color: white;
+    height: 90vh;
+    width: 25vw;
+    overflow: auto;
+    padding: 4px;
+    word-wrap: normal;
+    word-break: break-all;
+
+    & p {
+        margin-bottom: 2px;
+    }
+
+    & p::before {
+        content: "> ";
+    }
+}
+
+#console-wrapper::-webkit-scrollbar {
+    display: none;
+}
+
+/* Settings section */
+
+#settings-section {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    overflow: auto;
+    background: rgba(125,125,125,0.5); 
+}
+
+#settings-div {
+    padding: 4px;
+    position: absolute;
+    left:50%; 
+    top:50%;
+    transform: translate(-50%, -50%);
+    height:fit-content;
+    margin: auto;
+    border: 1px solid black;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+    background-color: white;
+    z-index: 10;
+}
+
+#cancel-settings {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: none;
+    font-size: 16px;
+}
+
+#img-combine input {
+    margin: 1px;
+}
+
+#forms-container {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    align-items: start;
+    margin: 8px 0;
+    width: 100%;
+}

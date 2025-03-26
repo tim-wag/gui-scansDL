@@ -1,0 +1,19 @@
+{
+  "name": "scans-dl",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "tim",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@electron/packager": "^18.3.6",
+    "electron": "^33.0.1"
+  },
+  "dependencies": {
+    "electron-store": "^10.0.0",
+    "python-shell": "^5.0.0"
+  }
+}
